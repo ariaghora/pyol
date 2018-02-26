@@ -1,4 +1,4 @@
-#PyOL
+# PyOL
 
 **What?**
 A tool to execute local python code in the remote server.
@@ -11,19 +11,19 @@ I like to work flexibly, with a high mobility, on my (old) laptop. Alas, it is n
 
 ### Installing
 
-##### a) On the server side (i.e., your powerful PC)
+##### a) On the server side (i.e., our powerful PC)
 Clone this reporsitory:
 ```
 $ git clone https://github.com/ariaghora/pyol.git
 $ cd pyol
 ```
 
-Optional: Activate your virtual environment, in which all libraries have been installed to run your project scripts:
+Optional: Activate the virtual environment, in which all libraries have been installed to run our project scripts:
 ```
 $ source activate your_env
 ```
 
-PyOL server requires Flask, thus you need to install it:
+PyOL server requires Flask, thus we need to install it:
 ```
 $ pip install Flask
 ```
@@ -49,7 +49,7 @@ Output:
 ```
 **Note:** keep the server host information (i.e., IP and port number) since we will need this for client configuration.
 
-##### b) On the client side (i.e., your crappy PC)
+##### b) On the client side (i.e., our crappy PC)
 Clone this reporsitory:
 ```
 $ git clone https://github.com/ariaghora/pyol.git
@@ -69,7 +69,7 @@ Create an empty project folder named "hello" containing "hello.py" file:
 print("Hello world")
 ```
 
-Initialize pyol in your project root directory with "pyol init" command, and  the project name and server host.
+Initialize pyol in our project root directory with "pyol init" command, and  the project name and server host.
 ```
 $ pyol init
 Enter the project name: hello
@@ -92,12 +92,12 @@ Output:
 Hello world
 ```
 
-That was a simple hello world program. Next, you can try with deep learning. Note that you don't need to install any python libraries (other than the ones required by pyol) on client side, as long as they are already installed on server side. Pretty neat, eh?
+That was a simple hello world program. Next, we can try with deep learning. Note that we don't need to install any python libraries (other than the ones required by pyol) on client side, as long as they are already installed on server side. Pretty neat, eh?
 
-##Known limitations
+## Known limitations
 
 - No _stdin_ handling yet. Thus, users cannot provide any input.
-- Cannot display _stdout_ line-by-line, i.e., you need to wait the execution for the complete output
+- Cannot display _stdout_ line-by-line, i.e., we need to wait the execution for the complete output
 - pyol execution must be from project's root directory
 
 ## License
